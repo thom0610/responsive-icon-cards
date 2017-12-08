@@ -11,6 +11,7 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
   font: normal 100%/1.5 sans-serif;
+
 }
 
 *, *::before, *::after {
@@ -35,7 +36,6 @@ html {
 }
 
 .card-body {
-
 }
 
 h2,
@@ -44,7 +44,7 @@ p {
   display: block;
 }
 
-p {
+p{
   margin-bottom: 1rem;
 }
 
