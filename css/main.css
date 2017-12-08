@@ -11,8 +11,6 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
   font: normal 100%/1.5 sans-serif;
-
-  box-sizing: border-box;
 }
 
 *, *::before, *::after {
@@ -22,6 +20,7 @@ html {
 .cards {
   padding: 0;
   display: block;
+  list-style-type: none;
 }
 
 .card {
@@ -37,7 +36,6 @@ html {
 
 .card-body {
 
-
 }
 
 h2,
@@ -46,7 +44,7 @@ p {
   display: block;
 }
 
-p{
+p {
   margin-bottom: 1rem;
 }
 
