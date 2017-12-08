@@ -11,4 +11,53 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
   font: normal 100%/1.5 sans-serif;
+
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.cards {
+  padding: 0;
+  display: block;
+}
+
+.card {
+  display: inline-block;
+}
+
+.card-img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.card-body {
+
+
+}
+
+h2,
+p {
+  margin: 0;
+  display: block;
+}
+
+p{
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+@@media  {
+
 }
