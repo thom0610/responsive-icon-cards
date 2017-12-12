@@ -11,7 +11,6 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
   font: normal 100%/1.5 sans-serif;
-
 }
 
 *, *::before, *::after {
@@ -25,17 +24,20 @@ html {
 }
 
 .card {
-  display: inline-block;
+  display: block;
 }
 
 .card-img {
   width: 50px;
   display: block;
-  margin: 0 auto;
+  position: relative;
+  margin-left: 7rem;
 
 }
 
-.card-body {
+h2 {
+  font-weight: normal;
+  margin-top: 2em;
 }
 
 h2,
@@ -44,16 +46,21 @@ p {
   display: block;
 }
 
-p{
+p {
   margin-bottom: 1rem;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
 li {
   display: inline-block;
+}
+
+.card-body {
+  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 25em) {
@@ -66,6 +73,21 @@ li {
   h1,
   p {
     margin: 0 0 1.3rem;
+    position: absolute;
+  }
+
+  .card li {
+    display: block;
+  }
+
+  .card-img img {
+    position: relative;
+  }
+
+  .card-img,
+  .card-body {
+    display: inline-block;
+    margin-left: 0;
   }
 }
 
@@ -79,6 +101,10 @@ li {
   h1,
   p {
     margin: 0 0 1.4rem;
+  }
+
+  .card {
+    padding: 1rem;
   }
 }
 
