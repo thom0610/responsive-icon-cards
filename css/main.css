@@ -70,8 +70,12 @@ li {
     line-height: 1.3;
   }
 
-  h2,
-  p {
+  .card-body h2 {
+    margin: 0 0 1.3rem;
+    position: absolute;
+  }
+
+  .card-body p{
     margin: 0 0 1.3rem;
     position: absolute;
   }
