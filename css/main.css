@@ -27,17 +27,11 @@ html {
   display: block;
 }
 
-.card-img {
-  width: 50px;
+.card-img img {
+  max-width: 50px;
   display: block;
-  position: relative;
-  margin-left: 7rem;
+  margin: 0 auto;
 
-}
-
-h2 {
-  font-weight: normal;
-  margin-top: 2em;
 }
 
 h2,
@@ -46,7 +40,12 @@ p {
   display: block;
 }
 
-p {
+.card-body h2 {
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.card-body p {
   margin-bottom: 1rem;
 }
 
@@ -70,28 +69,24 @@ li {
     line-height: 1.3;
   }
 
-  .card-body h2 {
-    margin: 0 0 1.3rem;
-    position: absolute;
+  .card-img {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: .5rem;
   }
 
-  .card-body p {
-    margin: 0 0 1.3rem;
-    position: absolute;
+  .card-body h2 {
+    margin-top: 0;
+  }
+
+  .card-body {
+    margin: 0;
+    display: inline-block;
+    width: 75%;
   }
 
   .card li {
     display: block;
-  }
-
-  .card-img img {
-    position: relative;
-  }
-
-  .card-img,
-  .card-body {
-    display: inline-block;
-    margin-left: 0;
   }
 }
 
@@ -102,13 +97,19 @@ li {
     line-height: 1.4;
   }
 
-  h2,
-  p {
+  .card-body h2,
+  .card-body p {
     margin: 0 0 1.4rem;
   }
 
   .card {
     padding: 1rem;
+  }
+
+  li.card {
+    display: inline-block;
+    width: 30%;
+    margin: 0;
   }
 }
 
@@ -119,8 +120,8 @@ li {
     line-height: 1.5;
   }
 
-  h2,
-  p {
+  .card-body h2,
+  .card-body p {
     margin: 0 0 1.5rem;
   }
 }
